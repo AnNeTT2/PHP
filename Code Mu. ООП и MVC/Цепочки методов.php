@@ -7,13 +7,13 @@ class Arr
     public function add($number)
     {
         $this->numbers[] = $number;// добавляем переданное число в массив
-        return $this; // вернем ссылку сами на себя для цепочного вызова
+        return $this; // возвращаем ссылку сами на себя для цепочного вызова
     }
 
     public function push($numbers)
     {
         $this->numbers = array_merge($this->numbers, $numbers); // объединяем существующий массив $this->numbers с новым массивом $numbers
-        return $this; // вернем ссылку сами на себя для цепочного вызова
+        return $this; // влзвращаем ссылку сами на себя для цепочного вызова
     }
 
     public function getSum()
